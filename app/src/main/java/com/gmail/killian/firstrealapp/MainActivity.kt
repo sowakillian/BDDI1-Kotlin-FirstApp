@@ -18,10 +18,15 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        initViews()
+    }
+
     private fun initViews() {
-        button = findViewById<Button>(R.id.buttonConnect)
-        email = findViewById<EditText>(R.id.hintEmail)
-        password = findViewById<EditText>(R.id.hintPassword)
+        button = findViewById(R.id.buttonConnect)
+        email = findViewById(R.id.hintEmail)
+        password = findViewById(R.id.hintPassword)
 
         button.setOnClickListener {
             val emailContent = email.text
@@ -41,7 +46,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onResume() {
-        initViews()
-    }
+
 }
