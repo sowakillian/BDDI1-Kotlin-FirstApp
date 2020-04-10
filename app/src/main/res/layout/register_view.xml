@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_left"
+        app:layout_constraintGuide_begin="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_right"
+        app:layout_constraintGuide_end="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="50dp"
+        android:layout_width="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/guide_left"
+        app:layout_constraintRight_toRightOf="@id/guide_right"
+        app:srcCompat="@drawable/logo_navigo2"
+        />
+
+    <TextView
+        android:id="@+id/hint_myids"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_myids"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+      />
+
+    <TextView
+        android:id="@+id/hint_firstname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_firstname"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/hint_myids"
+        android:drawableEnd="@drawable/ic_info_outline_black_24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_firstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_firstname"
+        app:layout_constraintTop_toBottomOf="@id/hint_firstname"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        />
+
+    <TextView
+        android:id="@+id/hint_lastname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_lastname"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/input_firstName"
+        android:drawableEnd="@drawable/ic_info_outline_black_24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_lastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_lastname"
+        app:layout_constraintTop_toBottomOf="@id/hint_lastname"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        />
+
+    <TextView
+        android:id="@+id/hint_myEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_myEmail"
+        app:layout_constraintTop_toBottomOf="@id/input_lastName"
+        />
+
+    <TextView
+        android:id="@+id/hint_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_email2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/hint_myEmail"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email2"
+        app:layout_constraintTop_toBottomOf="@id/hint_email"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        />
+
+    <TextView
+        android:id="@+id/hint_passwordCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_passwordCreate"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/input_email"
+        />
+
+    <TextView
+        android:id="@+id/hint_passwordTap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_passwordTap"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/hint_passwordCreate"
+        android:drawableEnd="@drawable/ic_info_outline_black_24dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_passwordTap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_passwordTap"
+        app:layout_constraintTop_toBottomOf="@id/hint_passwordTap"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        />
+
+    <TextView
+        android:id="@+id/hint_passwordConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        android:text="@string/hint_passwordConfirm"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/input_passwordTap"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_passwordConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_passwordConfirm"
+        app:layout_constraintTop_toBottomOf="@id/hint_passwordConfirm"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+        />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/hint_buttonValidate"
+        app:layout_constraintTop_toBottomOf="@id/input_passwordConfirm"
+        app:layout_constraintStart_toStartOf="@id/guide_left"
+        app:layout_constraintEnd_toEndOf="@id/guide_right"
+     />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

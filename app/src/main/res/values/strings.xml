@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FirstRealApp</string>
+    <string name="text_info">Favoris, alertes, achat de titres de transport, retrouvez toutes vos informations voyageur réunies sur un compte unique</string>
+    <string name="hint_email">Entrez votre e-mail ici</string>
+    <string name="hint_password">Entrez votre mot de passe ici</string>
+    <string name="hint_passwordCreate">Créer mon mot de passe</string>
+    <string name="hint_passwordTap">Saisir mon mot de passe</string>
+    <string name="hint_passwordConfirm">Confirmer mon mot de passe</string>
+    <string name="hint_buttonValidate">Valider</string>
+    <string name="hint_myids">Mes identifiants</string>
+    <string name="hint_firstname">Prénom</string>
+    <string name="hint_lastname">Nom</string>
+    <string name="hint_myEmail">Mon e-mail</string>
+    <string name="hint_email2">Email</string>
+    <string name="button_connect">Connexion</string>
+    <string name="button_forgottenPassword">Mot de passe oublié ?</string>
+</resources>
